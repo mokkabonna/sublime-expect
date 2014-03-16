@@ -8,7 +8,6 @@ Then in your user setting configure it like this (depending on the filename patt
 
 ```json
 {
-    // Put your custom syntax rules here:
     "syntaxes": [
         {
             "name": "Expect/JavaScript (Test)",

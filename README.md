@@ -10,7 +10,7 @@ Then in your user setting configure it like this (depending on the filename patt
 {
     "syntaxes": [
         {
-            "name": "Expect.js/JavaScript (Test)",
+            "name": "Expect/JavaScript (Test)",
             "rules": [
                 {"file_name": ".+Spec.js$"}
             ]

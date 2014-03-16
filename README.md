@@ -1,6 +1,6 @@
 # Snippets for expect.js
 
-Includes it's own language config so that the comopletions triggers in files for tests. This syntax is called JavaScript (Test) and inherits from the standard JavaScript syntax.
+Includes it's own language config so that the completions triggers only in files for tests. This syntax is called JavaScript (Test) and inherits from the standard JavaScript syntax.
 
 Either you can manually change the syntax for the file to this syntax to enable the completions, or even better use the sublime package [ApplySyntax](https://sublime.wbond.net/packages/ApplySyntax)
 
@@ -10,7 +10,7 @@ Then in your user setting configure it like this (depending on the filename patt
 {
     "syntaxes": [
         {
-            "name": "Expect/JavaScript (Test)",
+            "name": "Expect.js/JavaScript (Test)",
             "rules": [
                 {"file_name": ".+Spec.js$"}
             ]

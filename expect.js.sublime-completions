@@ -3,127 +3,127 @@
   "version": "0.10",
   "completions": [{
       "trigger": "expect().to.be.ok",
-      "content": "expect(${1:truthy}).to.be.ok();"
+      "contents": "expect(${1:truthy}).to.be.ok();"
     }, {
       "trigger": "expect().not.to.be.ok",
-      "content": "expect(${1:truthy}).not.to.be.ok();"
+      "contents": "expect(${1:truthy}).not.to.be.ok();"
     }, {
       "trigger": "expect().to.be",
-      "content": "expect(${1:value}).to.be();"
+      "contents": "expect(${1:value}).to.be(${2:strict});"
     }, {
       "trigger": "expect().not.to.be",
-      "content": "expect(${1:value}).not.to.be();"
+      "contents": "expect(${1:value}).not.to.be(${2:strict});"
     }, {
       "trigger": "expect().to.equal",
-      "content": "expect(${1:value}).to.equal();"
+      "contents": "expect(${1:value}).to.equal(${2:strict});"
     }, {
       "trigger": "expect().not.to.equal",
-      "content": "expect(${1:value}).not.to.equal();"
+      "contents": "expect(${1:value}).not.to.equal(${2:strict});"
     }, {
       "trigger": "expect().to.eql",
-      "content": "expect(${1:value}).to.eql();"
+      "contents": "expect(${1:value}).to.eql(${2:loose});"
     }, {
       "trigger": "expect().not.to.eql",
-      "content": "expect(${1:value}).not.to.eql();"
+      "contents": "expect(${1:value}).not.to.eql(${2:loose});"
     }, {
       "trigger": "expect().to.be.a",
-      "content": "expect(${1:value|constructor}).to.be.a(${2:'number'|Constructor});"
+      "contents": "expect(${1:value|constructor}).to.be.a(${2:'number'|Constructor});"
     }, {
       "trigger": "expect().not.to.be.a",
-      "content": "expect(${1:value|constructor}).not.to.be.a(${2:'number'|Constructor});"
+      "contents": "expect(${1:value|constructor}).not.to.be.a(${2:'number'|Constructor});"
     }, {
       "trigger": "expect().to.match",
-      "content": "expect(${1:string}).to.match(/${2:regex}/);"
+      "contents": "expect(${1:string}).to.match(/${2:regex}/);"
     }, {
       "trigger": "expect().not.to.match",
-      "content": "expect(${1:string}).not.to.match(/${2:regex}/);"
+      "contents": "expect(${1:string}).not.to.match(/${2:regex}/);"
     }, {
       "trigger": "expect().to.contain",
-      "content": "expect(${1:array|string}).to.contain(${2:value});"
+      "contents": "expect(${1:array|string}).to.contain(${2:value});"
     }, {
       "trigger": "expect().not.to.contain",
-      "content": "expect(${1:array|string}).not.to.contain(${2:value});"
+      "contents": "expect(${1:array|string}).not.to.contain(${2:value});"
     }, {
       "trigger": "expect().to.have.length",
-      "content": "expect(${1:array}).to.have.length(${2:0});"
+      "contents": "expect(${1:array}).to.have.length(${2:0});"
     }, {
       "trigger": "expect().not.to.have.length",
-      "content": "expect(${1:array}).not.to.have.length(${2:0});"
+      "contents": "expect(${1:array}).not.to.have.length(${2:0});"
     }, {
       "trigger": "expect().to.be.empty",
-      "content": "expect(${1:array}).to.be.empty();"
+      "contents": "expect(${1:array}).to.be.empty();"
     }, {
       "trigger": "expect().not.to.be.empty",
-      "content": "expect(${1:array}).not.to.be.empty();"
+      "contents": "expect(${1:array}).not.to.be.empty();"
     }, {
       "trigger": "expect().to.have.property",
-      "content": "expect(${1:object}).to.have.property(${2:key, value});"
+      "contents": "expect(${1:object}).to.have.property(${2:key, value});"
     }, {
       "trigger": "expect().not.to.have.property",
-      "content": "expect(${1:object}).not.to.have.property(${2:key, value});"
+      "contents": "expect(${1:object}).not.to.have.property(${2:key, value});"
     }, {
       "trigger": "expect().to.have.key",
-      "content": "expect(${1:object}).to.have.key(${2:key});"
+      "contents": "expect(${1:object}).to.have.key(${2:key});"
     }, {
       "trigger": "expect().not.to.have.key",
-      "content": "expect(${1:object}).not.to.have.key(${2:key});"
+      "contents": "expect(${1:object}).not.to.have.key(${2:key});"
     }, {
       "trigger": "expect().to.only.have.keys",
-      "content": "expect(${1:object}).to.only.have.keys(${2:key1, key2});"
+      "contents": "expect(${1:object}).to.only.have.keys(${2:key1, key2});"
     }, {
       "trigger": "expect().not.to.only.have.keys",
-      "content": "expect(${1:object}).not.to.only.have.keys(${2:key1, key2});"
+      "contents": "expect(${1:object}).not.to.only.have.keys(${2:key1, key2});"
     }, {
       "trigger": "expect().to.throwError",
-      "content": "expect(${1:function}).to.throwError(/${2:regex}/);"
+      "contents": "expect(${1:fn}).to.throwError(/${2:matches the exception message}/);"
     }, {
       "trigger": "expect().not.to.throwError",
-      "content": "expect(${1:function}).not.to.throwError(/${2:regex}/);"
+      "contents": "expect(${1:fn}).not.to.throwError(/${2:matches the exception message}/);"
     }, {
       "trigger": "expect().to.throwException",
-      "content": "expect(${1:function}).to.throwException(/${2:regex}/);"
+      "contents": "expect(${1:fn}).to.throwException(/${2:matches the exception message}/);"
     }, {
       "trigger": "expect().not.to.throwException",
-      "content": "expect(${1:function}).not.to.throwException(/${2:regex}/);"
+      "contents": "expect(${1:fn}).not.to.throwException(/${2:matches the exception message}/);"
     }, {
       "trigger": "expect().withArgs",
-      "content": "expect(${1:function}).withArgs(${2:arg}).to.throwException(${3:regex});"
+      "contents": "expect(${1:fn}).withArgs(${2:arg}).to.throwException(${3:matches the exception message});"
     }, {
       "trigger": "expect().not.withArgs",
-      "content": "expect(${1:function}).withArgs(${2:arg}).not.to.throwException(${3:regex});"
+      "contents": "expect(${1:fn}).withArgs(${2:arg}).not.to.throwException(${3:matches the exception message});"
     }, {
       "trigger": "expect().to.be.within",
-      "content": "expect(${1:number}).to.be.within(${2:min}, ${3:max});"
+      "contents": "expect(${1:number}).to.be.within(${2:min}, ${3:max});"
     }, {
       "trigger": "expect().not.to.be.within",
-      "content": "expect(${1:number}).not.to.be.within(${2:min}, ${3:max});"
+      "contents": "expect(${1:number}).not.to.be.within(${2:min}, ${3:max});"
     }, {
       "trigger": "expect().to.be.above",
-      "content": "expect(${1:number}).to.be.above(${2:0});"
+      "contents": "expect(${1:number}).to.be.above(${2:0});"
     }, {
       "trigger": "expect().not.to.be.above",
-      "content": "expect(${1:number}).not.to.be.above(${2:0});"
+      "contents": "expect(${1:number}).not.to.be.above(${2:0});"
     }, {
       "trigger": "expect().to.be.greaterThan",
-      "content": "expect(${1:number}).to.be.greaterThan(${2:0});"
+      "contents": "expect(${1:number}).to.be.greaterThan(${2:0});"
     }, {
       "trigger": "expect().not.to.be.greaterThan",
-      "content": "expect(${1:number}).not.to.be.greaterThan(${2:0});"
+      "contents": "expect(${1:number}).not.to.be.greaterThan(${2:0});"
     }, {
       "trigger": "expect().to.be.below",
-      "content": "expect(${1:number}).to.be.below(${2:10});"
+      "contents": "expect(${1:number}).to.be.below(${2:10});"
     }, {
       "trigger": "expect().not.to.be.below",
-      "content": "expect(${1:number}).not.to.be.below(${2:10});"
+      "contents": "expect(${1:number}).not.to.be.below(${2:10});"
     }, {
       "trigger": "expect().to.be.lessThan",
-      "content": "expect(${1:number}).to.be.lessThan(${2:10});"
+      "contents": "expect(${1:number}).to.be.lessThan(${2:10});"
     }, {
       "trigger": "expect().not.to.be.lessThan",
-      "content": "expect(${1:number}).not.to.be.lessThan(${2:10});"
+      "contents": "expect(${1:number}).not.to.be.lessThan(${2:10});"
     }, {
       "trigger": "expect().fail",
-      "content": "expect().fail(${1:'Custom failure message'});"
+      "contents": "expect().fail(${1:'Custom failure message'});"
     }
 
   ]
